@@ -1,0 +1,16 @@
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.exe
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.deps.json
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.runtimeconfig.json
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.runtimeconfig.dev.json
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.dll
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ref\ReceiveSample.dll
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\bin\Debug\net5.0\ReceiveSample.pdb
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.csproj.AssemblyReference.cache
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.AssemblyInfoInputs.cache
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.AssemblyInfo.cs
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.csproj.CoreCompileInputs.cache
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.dll
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ref\ReceiveSample.dll
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.pdb
+C:\Users\aba\source\repos\larseggan\GI.Matrikkelf.FIKSIO.Sample\ReceiveSample\obj\Debug\net5.0\ReceiveSample.genruntimeconfig.cache
