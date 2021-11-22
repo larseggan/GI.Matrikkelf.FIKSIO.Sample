@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,11 +9,6 @@
     <PackageReference Include="KS.Fiks.Crypto" Version="1.0.4" />
     <PackageReference Include="KS.Fiks.IO.Client" Version="1.2.3" />
     <PackageReference Include="KS.Fiks.IO.Send.Client" Version="1.0.7" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibFIKSIO\ClassLibFIKSIO.csproj" />
   </ItemGroup>
 
 </Project>

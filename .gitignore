@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ReceiveSample/bin/Debug/net5.0/ReceiveSample.deps.json
+/ReceiveSample/bin/Debug/net5.0
+/ReceiveSample/obj/Debug/net5.0
+/ReceiveSample/obj
+/ClassLibFIKSIO/bin/Debug/netstandard2.0
+/ClassLibFIKSIO/obj/Debug/netstandard2.0
+/ClassLibFIKSIO/obj
+/SendSample/bin/Debug/net5.0/runtimes/win/lib
+/SendSample/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1
