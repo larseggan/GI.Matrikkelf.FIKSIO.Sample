@@ -4,12 +4,35 @@ Dette bygger på versjon 2 av standarden: https://ks-no.github.io/fiks-plattform
 
 Svarut/SvarInn versjon1 eksempel kan du finne her: https://github.com/ks-no/Geointegrasjon.Matrikkelf-ring.Sample
 
+Funksjonalitet
+--------------
+
+Eksemplet `SendSample` sender meldinger med forsendelsestype 
+`Geointegrasjon.Matrikkelføring`, slik at de kan plukkes opp av mottakstjenesten  som lytter på dette. Meldingen sendes med egenskapen "kun digital levering", slik 
+at den ikke går videre til brevpost ved manglende henting.  Det blir sendt 
+meldinger med ulike nivåer av klarhet for matrikkelføring, fra nivå 0 (det har 
+skjedd et vedtak) til nivå 4 (full situasjonsplan). Se koden for nærmere info om 
+hva som gjøres i hvert nivå. Dette eksempelet tilsvarer altså det arbeidet som 
+skal gjøres i eByggeSak-systemet for å sende meldinger til matrikkelklienten.
+
+Når du har sendt meldinger vil de være synlige i ???.
+
+Eksempelet `ReceiveSample` er en mottakstjeneste som lytter på slike meldinger. 
+Den henter ut listen over mottatte meldinger, laster ned innholdet og dekrypterer 
+det, og sender kvittering på at innholdet er korrekt mottatt. Når SvarInn mottar
+kvitteringen vil den slette meldingen i sin ende. Dette eksempelet tilsvarer altså det arbeidet som skal gjøres i matrikkelklienten/automatisert 
+matrikkeoppdateringstjeneste for å ta imot informasjonen og bekrefte at 
+matrikkelføring er utført.
+
+Det er benyttet nuget-pakken: https://github.com/ks-no/fiks-io-client-dotnet\
+
 Konfigurasjon
 -------------
 
-Koden krever noen private nøkler som du må hente ut fra https://forvaltning.fiks.test.ks.no/![image](https://user-images.githubusercontent.com/11415599/143021295-76ac8523-f10d-43e8-b528-ae5dfc3adf07.png)
-
+Koden krever noen private nøkler som du må hente ut fra https://forvaltning.fiks.test.ks.no/
 
 For at ikke de skal havne ut i kildekontroll, legges de i filen 
 LocalSettings.config, som er referert fra csproj-filene men lagt inn i .gitignore. 
 Du må kopiere LocalSettings.default.config og omdøpe den, og deretter legge inn verdiene.
+
+Sertifikat
