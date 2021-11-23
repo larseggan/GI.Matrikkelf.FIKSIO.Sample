@@ -36,3 +36,12 @@ LocalSettings.config, som er referert fra csproj-filene men lagt inn i .gitignor
 Du må kopiere LocalSettings.default.config og omdøpe den, og deretter legge inn verdiene.
 
 Sertifikat
+-------------
+
+Man må ha et sertifikat f.eks. et buypass sertifikat.
+Dette må konverteres til et Microsoft Enhanced RSA and AES Cryptographic Provider.
+Eksempel der det inne i <> må fylles ut av hver enkelt:
+certutil  -p <passord> -csp "Microsoft Enhanced RSA and AES Cryptographic Provider" -v  -importPFX "Buypass ID-<firma>-serienummer<serienummer>.p12" AT_KEYEXCHANGE,NoExport,NoProtect
+
+
+
