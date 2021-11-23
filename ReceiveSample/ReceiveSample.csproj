@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -15,6 +15,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibFIKSIO\ClassLibFIKSIO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LocalSettings.default.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalSettings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
