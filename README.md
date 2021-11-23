@@ -19,8 +19,7 @@ Når du har sendt meldinger vil de være synlige i ???.
 
 Eksempelet `ReceiveSample` er en mottakstjeneste som lytter på slike meldinger. 
 Den henter ut listen over mottatte meldinger, laster ned innholdet og dekrypterer 
-det, og sender kvittering på at innholdet er korrekt mottatt. Når SvarInn mottar
-kvitteringen vil den slette meldingen i sin ende. Dette eksempelet tilsvarer altså det arbeidet som skal gjøres i matrikkelklienten/automatisert 
+det, og sender kvittering på at innholdet er korrekt mottatt. Dette eksempelet tilsvarer altså det arbeidet som skal gjøres i matrikkelklienten/automatisert 
 matrikkeoppdateringstjeneste for å ta imot informasjonen og bekrefte at 
 matrikkelføring er utført.
 
