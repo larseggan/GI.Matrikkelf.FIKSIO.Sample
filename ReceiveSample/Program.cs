@@ -44,9 +44,9 @@ namespace ReceiveSample
                             {
                                 if (asiceReadEntry.FileName.Contains(".xml"))
                                 {
-                                    XmlSerializer serializer = new XmlSerializer(typeof(Byggesak));
+                                    XmlSerializer serializer = new XmlSerializer(typeof(ByggesakType));
 
-                                    Byggesak sak = (Byggesak)serializer.Deserialize(entryStream);
+                                    ByggesakType sak = (ByggesakType)serializer.Deserialize(entryStream);
                                     if (sak.saksnummer != null)
                                     {
                                         Console.WriteLine("Mottatt byggesak med saksnummer " + sak.saksnummer.saksaar.ToString() + "/" + sak.saksnummer.sakssekvensnummer.ToString());
