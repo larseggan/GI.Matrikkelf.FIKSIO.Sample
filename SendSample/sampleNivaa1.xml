@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Byggesak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.geointegrasjon.no/Matrikkel/foering/v2">
+  <tittel>Rammesøknad for enebolig i Byggestedgate 1 Nivå 0</tittel>
+  <saksnummer>
+    <saksaar>2018</saksaar>
+    <sakssekvensnummer>123456</sakssekvensnummer>
+  </saksnummer>
+</Byggesak>

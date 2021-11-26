@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Byggesak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.geointegrasjon.no/Matrikkel/foering/v2">
+  <systemId xsi:nil="true" />
+  <tittel>Rammesøknad for oppføring av 5 tomannsboliger</tittel>
+  <saksnummer>
+    <saksaar>2018</saksaar>
+    <sakssekvensnummer>123456</sakssekvensnummer>
+  </saksnummer>
+  <kategori>
+    <kode>RS</kode>
+    <beskrivelse>Søknad om rammetillatelse</beskrivelse>
+  </kategori>
+  <tiltakstype>
+    <tiltaktype>
+      <kode>nyttbyggboligformal</kode>
+      <beskrivelse>Nytt bygg - boligformål</beskrivelse>
+    </tiltaktype>
+  </tiltakstype>
+  <vedtak>
+    <beskrivelse>Vedtak om rammetillatelse</beskrivelse>
+    <vedtaksdato>2020-04-02T16:16:45.1760034+02:00</vedtaksdato>
+    <status>
+      <kode>1</kode>
+      <beskrivelse>Godkjent</beskrivelse>
+    </status>
+    <dispensasjoner xsi:nil="true" />
+  </vedtak>
+  <ansvarligSoeker>
+    <foedselsnummer xsi:nil="true" />
+    <organisasjonsnummer>123456789</organisasjonsnummer>
+    <navn>Arkitekt Flink</navn>
+    <adresse xsi:nil="true" />
+    <telefonnummer xsi:nil="true" />
+    <mobilnummer xsi:nil="true" />
+    <epost xsi:nil="true" />
+  </ansvarligSoeker>
+  <tiltakshaver>
+    <foedselsnummer>12345678901</foedselsnummer>
+    <organisasjonsnummer xsi:nil="true" />
+    <navn>Hans Utbygger</navn>
+    <adresse xsi:nil="true" />
+    <telefonnummer xsi:nil="true" />
+    <mobilnummer xsi:nil="true" />
+    <epost xsi:nil="true" />
+  </tiltakshaver>
+  <matrikkelopplysninger>
+    <eiendomsidentifikasjon>
+      <matrikkelnummer>
+        <kommunenummer>9999</kommunenummer>
+        <gaardsnummer>260</gaardsnummer>
+        <bruksnummer>109</bruksnummer>
+        <festenummer xsi:nil="true" />
+        <seksjonsnummer xsi:nil="true" />
+      </matrikkelnummer>
+    </eiendomsidentifikasjon>
+    <adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>3</adressenummer>
+        <adressebokstav>A</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>3</adressenummer>
+        <adressebokstav>B</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>5</adressenummer>
+        <adressebokstav>A</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>5</adressenummer>
+        <adressebokstav>B</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>7</adressenummer>
+        <adressebokstav>A</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>7</adressenummer>
+        <adressebokstav>B</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>9</adressenummer>
+        <adressebokstav>A</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>9</adressenummer>
+        <adressebokstav>B</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>11</adressenummer>
+        <adressebokstav>A</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+      <adresse>
+        <adressekode>1001</adressekode>
+        <adressenavn>Byggestedgate</adressenavn>
+        <adressenummer>11</adressenummer>
+        <adressebokstav>B</adressebokstav>
+        <seksjonsnummer xsi:nil="true" />
+      </adresse>
+    </adresse>
+    <bygning>
+      <bygning>
+        <bygningsnummer xsi:nil="true" />
+        <naeringsgruppe>
+          <kode>X</kode>
+          <beskrivelse>Bolig</beskrivelse>
+        </naeringsgruppe>
+        <bygningstype>
+          <kode>121</kode>
+          <beskrivelse>Tomannsbolig, vertikaldelt</beskrivelse>
+        </bygningstype>
+        <bebygdAreal>100</bebygdAreal>
+        <bruksenheter>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>3</adressenummer>
+              <adressebokstav>A</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>3</adressenummer>
+              <adressebokstav>B</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+        </bruksenheter>
+        <etasjer>
+          <etasje>
+            <etasjenummer>01</etasjenummer>
+            <etasjeplan>
+              <kode>H</kode>
+              <beskrivelse>H</beskrivelse>
+            </etasjeplan>
+            <antallBoenheter>1</antallBoenheter>
+            <bruksarealTilAnnet>0</bruksarealTilAnnet>
+            <bruksarealTilBolig>200</bruksarealTilBolig>
+            <bruksarealTotalt>200</bruksarealTotalt>
+            <endring>Ny</endring>
+          </etasje>
+        </etasjer>
+        <avlop>
+          <kode>OffentligKloakk</kode>
+          <beskrivelse>Offentlig avløpsanlegg</beskrivelse>
+        </avlop>
+        <energiforsyning xsi:nil="true" />
+        <vannforsyning>
+          <kode>TilknyttetOffVannverk</kode>
+          <beskrivelse>Offentlig vannverk</beskrivelse>
+        </vannforsyning>
+        <harHeis>false</harHeis>
+        <endring>Ny</endring>
+      </bygning>
+      <bygning>
+        <bygningsnummer xsi:nil="true" />
+        <naeringsgruppe>
+          <kode>X</kode>
+          <beskrivelse>Bolig</beskrivelse>
+        </naeringsgruppe>
+        <bygningstype>
+          <kode>121</kode>
+          <beskrivelse>Tomannsbolig, vertikaldelt</beskrivelse>
+        </bygningstype>
+        <bebygdAreal>100</bebygdAreal>
+        <bruksenheter>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>5</adressenummer>
+              <adressebokstav>A</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>5</adressenummer>
+              <adressebokstav>B</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+        </bruksenheter>
+        <etasjer>
+          <etasje>
+            <etasjenummer>01</etasjenummer>
+            <etasjeplan>
+              <kode>H</kode>
+              <beskrivelse>H</beskrivelse>
+            </etasjeplan>
+            <antallBoenheter>1</antallBoenheter>
+            <bruksarealTilAnnet>0</bruksarealTilAnnet>
+            <bruksarealTilBolig>200</bruksarealTilBolig>
+            <bruksarealTotalt>200</bruksarealTotalt>
+            <endring>Ny</endring>
+          </etasje>
+        </etasjer>
+        <avlop>
+          <kode>OffentligKloakk</kode>
+          <beskrivelse>Offentlig avløpsanlegg</beskrivelse>
+        </avlop>
+        <energiforsyning xsi:nil="true" />
+        <vannforsyning>
+          <kode>TilknyttetOffVannverk</kode>
+          <beskrivelse>Offentlig vannverk</beskrivelse>
+        </vannforsyning>
+        <harHeis>false</harHeis>
+        <endring>Ny</endring>
+      </bygning>
+      <bygning>
+        <bygningsnummer xsi:nil="true" />
+        <naeringsgruppe>
+          <kode>X</kode>
+          <beskrivelse>Bolig</beskrivelse>
+        </naeringsgruppe>
+        <bygningstype>
+          <kode>121</kode>
+          <beskrivelse>Tomannsbolig, vertikaldelt</beskrivelse>
+        </bygningstype>
+        <bebygdAreal>100</bebygdAreal>
+        <bruksenheter>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>7</adressenummer>
+              <adressebokstav>A</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>7</adressenummer>
+              <adressebokstav>B</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+        </bruksenheter>
+        <etasjer>
+          <etasje>
+            <etasjenummer>01</etasjenummer>
+            <etasjeplan>
+              <kode>H</kode>
+              <beskrivelse>H</beskrivelse>
+            </etasjeplan>
+            <antallBoenheter>1</antallBoenheter>
+            <bruksarealTilAnnet>0</bruksarealTilAnnet>
+            <bruksarealTilBolig>200</bruksarealTilBolig>
+            <bruksarealTotalt>200</bruksarealTotalt>
+            <endring>Ny</endring>
+          </etasje>
+        </etasjer>
+        <avlop>
+          <kode>OffentligKloakk</kode>
+          <beskrivelse>Offentlig avløpsanlegg</beskrivelse>
+        </avlop>
+        <energiforsyning xsi:nil="true" />
+        <vannforsyning>
+          <kode>TilknyttetOffVannverk</kode>
+          <beskrivelse>Offentlig vannverk</beskrivelse>
+        </vannforsyning>
+        <harHeis>false</harHeis>
+        <endring>Ny</endring>
+      </bygning>
+      <bygning>
+        <bygningsnummer xsi:nil="true" />
+        <naeringsgruppe>
+          <kode>X</kode>
+          <beskrivelse>Bolig</beskrivelse>
+        </naeringsgruppe>
+        <bygningstype>
+          <kode>121</kode>
+          <beskrivelse>Tomannsbolig, vertikaldelt</beskrivelse>
+        </bygningstype>
+        <bebygdAreal>100</bebygdAreal>
+        <bruksenheter>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>9</adressenummer>
+              <adressebokstav>A</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>9</adressenummer>
+              <adressebokstav>B</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+        </bruksenheter>
+        <etasjer>
+          <etasje>
+            <etasjenummer>01</etasjenummer>
+            <etasjeplan>
+              <kode>H</kode>
+              <beskrivelse>H</beskrivelse>
+            </etasjeplan>
+            <antallBoenheter>1</antallBoenheter>
+            <bruksarealTilAnnet>0</bruksarealTilAnnet>
+            <bruksarealTilBolig>200</bruksarealTilBolig>
+            <bruksarealTotalt>200</bruksarealTotalt>
+            <endring>Ny</endring>
+          </etasje>
+        </etasjer>
+        <avlop>
+          <kode>OffentligKloakk</kode>
+          <beskrivelse>Offentlig avløpsanlegg</beskrivelse>
+        </avlop>
+        <energiforsyning xsi:nil="true" />
+        <vannforsyning>
+          <kode>TilknyttetOffVannverk</kode>
+          <beskrivelse>Offentlig vannverk</beskrivelse>
+        </vannforsyning>
+        <harHeis>false</harHeis>
+        <endring>Ny</endring>
+      </bygning>
+      <bygning>
+        <bygningsnummer xsi:nil="true" />
+        <naeringsgruppe>
+          <kode>X</kode>
+          <beskrivelse>Bolig</beskrivelse>
+        </naeringsgruppe>
+        <bygningstype>
+          <kode>121</kode>
+          <beskrivelse>Tomannsbolig, vertikaldelt</beskrivelse>
+        </bygningstype>
+        <bebygdAreal>100</bebygdAreal>
+        <bruksenheter>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>11</adressenummer>
+              <adressebokstav>A</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+          <bruksenhet>
+            <bruksenhetsnummer>
+              <etasjeplan>
+                <kode>H</kode>
+                <beskrivelse>H</beskrivelse>
+              </etasjeplan>
+              <etasjenummer>01</etasjenummer>
+              <loepenummer>01</loepenummer>
+            </bruksenhetsnummer>
+            <bruksenhetstype>
+              <kode>B</kode>
+              <beskrivelse>Bolig</beskrivelse>
+            </bruksenhetstype>
+            <bruksareal>100</bruksareal>
+            <kjoekkentilgang>
+              <kode>0</kode>
+              <beskrivelse>Ikke oppgitt</beskrivelse>
+            </kjoekkentilgang>
+            <antallRom>3</antallRom>
+            <antallBad>1</antallBad>
+            <antallWC>1</antallWC>
+            <adresse>
+              <adressekode>1001</adressekode>
+              <adressenavn>Byggestedgate</adressenavn>
+              <adressenummer>11</adressenummer>
+              <adressebokstav>B</adressebokstav>
+              <seksjonsnummer xsi:nil="true" />
+            </adresse>
+            <matrikkelnummer xsi:nil="true" />
+            <endring>Ny</endring>
+          </bruksenhet>
+        </bruksenheter>
+        <etasjer>
+          <etasje>
+            <etasjenummer>01</etasjenummer>
+            <etasjeplan>
+              <kode>H</kode>
+              <beskrivelse>H</beskrivelse>
+            </etasjeplan>
+            <antallBoenheter>1</antallBoenheter>
+            <bruksarealTilAnnet>0</bruksarealTilAnnet>
+            <bruksarealTilBolig>200</bruksarealTilBolig>
+            <bruksarealTotalt>200</bruksarealTotalt>
+            <endring>Ny</endring>
+          </etasje>
+        </etasjer>
+        <avlop>
+          <kode>OffentligKloakk</kode>
+          <beskrivelse>Offentlig avløpsanlegg</beskrivelse>
+        </avlop>
+        <energiforsyning xsi:nil="true" />
+        <vannforsyning>
+          <kode>TilknyttetOffVannverk</kode>
+          <beskrivelse>Offentlig vannverk</beskrivelse>
+        </vannforsyning>
+        <harHeis>false</harHeis>
+        <endring>Ny</endring>
+      </bygning>
+    </bygning>
+  </matrikkelopplysninger>
+  <adresse>Byggestedgate 3 - 11</adresse>
+  <referanseAndreSaker xsi:nil="true" />
+  <referanseKlagesaker xsi:nil="true" />
+  <registrertDato>0001-01-01T00:00:00</registrertDato>
+  <saksbehandler>Michael</saksbehandler>
+  <posisjon xsi:nil="true" />
+</Byggesak>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SendSample": {
+      "commandName": "Project",
+      "commandLineArgs": "3"
+    }
+  }
+}
