@@ -2537,3 +2537,219 @@ public partial class KodeListe {
         }
     }
 }
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(TypeName="ByggIdentType", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2")]
+[System.Xml.Serialization.XmlRootAttribute("ByggIdent", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2", IsNullable=false)]
+public partial class ByggIdentType1 {
+    
+    private string bygningsnummerField;
+    
+    private string bygningsloepenummerField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+    public string bygningsnummer {
+        get {
+            return this.bygningsnummerField;
+        }
+        set {
+            this.bygningsnummerField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(DataType="integer", IsNullable=true)]
+    public string bygningsloepenummer {
+        get {
+            return this.bygningsloepenummerField;
+        }
+        set {
+            this.bygningsloepenummerField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2")]
+[System.Xml.Serialization.XmlRootAttribute("KvitteringMatrikkel", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2", IsNullable=false)]
+public partial class KvitteringMatrikkelType {
+    
+    private SaksnummerType1 saksnummerField;
+    
+    private string meldingField;
+    
+    private string statusField;
+    
+    private TiltakType1[] tiltakField;
+    
+    private ByggIdentType1[] byggIdentField;
+    
+    /// <remarks/>
+    public SaksnummerType1 saksnummer {
+        get {
+            return this.saksnummerField;
+        }
+        set {
+            this.saksnummerField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+    public string melding {
+        get {
+            return this.meldingField;
+        }
+        set {
+            this.meldingField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+    public string status {
+        get {
+            return this.statusField;
+        }
+        set {
+            this.statusField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("tiltak", IsNullable=false)]
+    public TiltakType1[] tiltak {
+        get {
+            return this.tiltakField;
+        }
+        set {
+            this.tiltakField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+    [System.Xml.Serialization.XmlArrayItemAttribute("byggident", IsNullable=false)]
+    public ByggIdentType1[] byggIdent {
+        get {
+            return this.byggIdentField;
+        }
+        set {
+            this.byggIdentField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(TypeName="SaksnummerType", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2")]
+[System.Xml.Serialization.XmlRootAttribute("Saksnummer", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2", IsNullable=false)]
+public partial class SaksnummerType1 {
+    
+    private string saksaarField;
+    
+    private string sakssekvensnummerField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+    public string saksaar {
+        get {
+            return this.saksaarField;
+        }
+        set {
+            this.saksaarField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+    public string sakssekvensnummer {
+        get {
+            return this.sakssekvensnummerField;
+        }
+        set {
+            this.sakssekvensnummerField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(TypeName="TiltakType", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2")]
+[System.Xml.Serialization.XmlRootAttribute("Tiltak", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2", IsNullable=false)]
+public partial class TiltakType1 {
+    
+    private string tiltakidField;
+    
+    private TiltaktypeType1 tiltakstypeField;
+    
+    /// <remarks/>
+    public string tiltakid {
+        get {
+            return this.tiltakidField;
+        }
+        set {
+            this.tiltakidField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public TiltaktypeType1 tiltakstype {
+        get {
+            return this.tiltakstypeField;
+        }
+        set {
+            this.tiltakstypeField = value;
+        }
+    }
+}
+
+/// <remarks/>
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
+[System.SerializableAttribute()]
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(TypeName="TiltaktypeType", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2")]
+[System.Xml.Serialization.XmlRootAttribute("Tiltaktype", Namespace="http://rep.geointegrasjon.no/Matrikkel/foeringskvittering/v2", IsNullable=false)]
+public partial class TiltaktypeType1 {
+    
+    private string kodeField;
+    
+    private string beskrivelseField;
+    
+    /// <remarks/>
+    public string kode {
+        get {
+            return this.kodeField;
+        }
+        set {
+            this.kodeField = value;
+        }
+    }
+    
+    /// <remarks/>
+    public string beskrivelse {
+        get {
+            return this.beskrivelseField;
+        }
+        set {
+            this.beskrivelseField = value;
+        }
+    }
+}

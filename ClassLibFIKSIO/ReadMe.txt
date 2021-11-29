@@ -6,3 +6,5 @@ Kjører kommando xsd.exe matrikkelfoeringv2.xsd giFellesGeometri20120131.xsd giF
 Fra VisualStudio kommandolinje
 
 Endret manuelt navn på cs fila etterpå
+
+xsd.exe kvitteringmatrikkelfoeringv2.xsd /c

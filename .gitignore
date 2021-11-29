@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 .DS_Store
 /ReceiveSample/LocalSettings.config
 /SendSample/LocalSettings.config
+/RecieveSampleWinForms/LocalSettings.config
