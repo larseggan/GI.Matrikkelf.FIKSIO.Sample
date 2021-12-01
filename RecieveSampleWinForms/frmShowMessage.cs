@@ -7,7 +7,8 @@ using KS.Fiks.ASiC_E;
 using System.Xml.Serialization;
 using System.IO;
 using System.Collections.Generic;
-
+using System.IO;
+using System.Text;
 
 namespace RecieveSampleWinForms
 {
@@ -41,15 +42,33 @@ namespace RecieveSampleWinForms
                         {
                             if (asiceReadEntry.FileName.Contains(".xml"))
                             {
-                                XmlSerializer serializer = new XmlSerializer(typeof(ByggesakType));
-
-                                ByggesakType sak = (ByggesakType)serializer.Deserialize(entryStream);
-                                if (sak.saksnummer != null)
+                                
+                                try
                                 {
-                                    txtSaksaar.Text = sak.saksnummer.saksaar.ToString();
-                                    txtSakssekvensnummer.Text = sak.saksnummer.sakssekvensnummer.ToString();
+                                    if (mottatt.Melding.MeldingType == "no.ks.fiks.matrikkelfoering.grunnlag.v2")
+                                    {
+                                        XmlSerializer serializer = new XmlSerializer(typeof(ByggesakType));
+                                        ByggesakType sak = (ByggesakType)serializer.Deserialize(entryStream);
+                                        if (sak.saksnummer != null)
+                                        {
+                                            txtSaksaar.Text = sak.saksnummer.saksaar.ToString();
+                                            txtSakssekvensnummer.Text = sak.saksnummer.sakssekvensnummer.ToString();
 
+                                        }
+                                    }
+                                    else if(mottatt.Melding.MeldingType == "no.ks.fiks.matrikkelfoering.kvittering.v2")
+                                    {
+                                        XmlSerializer serializer = new XmlSerializer(typeof(KvitteringMatrikkelType));
+                                        KvitteringMatrikkelType ident = (KvitteringMatrikkelType)serializer.Deserialize(entryStream);
+                                       
+                                    }
                                 }
+                                catch (Exception ex)
+                                {
+
+                                    MessageBox.Show(ex.Message);
+                                }
+                              
                             }
                         }
 
@@ -122,15 +141,18 @@ namespace RecieveSampleWinForms
             ByggIdentType1 newIdent = new ByggIdentType1();
             newIdent.bygningsnummer = nyBygning.Bygningsnummer;
             newIdent.bygningsloepenummer = nyBygning.Bygningsloepenummer;
+            kvitteringMatrikkelType.byggIdent[0] = newIdent;
 
-            // Denne xml en gir en feil når den ska hentes opp i ShowMessage
+
             string xmlString = "";
-            using (var stringwriter = new System.IO.StringWriter())
+            using (var stringwriter = new ExtentedStringWriter(Encoding.UTF8))
             {
-                stringwriter.NewLine = "";
-                var serializer = new XmlSerializer(typeof(KvitteringMatrikkelType));
+                
+             //   stringwriter.NewLine = "";
+                var serializer = new XmlSerializer(kvitteringMatrikkelType.GetType());
                 serializer.Serialize(stringwriter, kvitteringMatrikkelType);
                 xmlString = stringwriter.ToString();
+
             }
 
 
@@ -148,6 +170,25 @@ namespace RecieveSampleWinForms
 
             _mottatt.SvarSender.Ack();
             Close();
+        }
+
+        // try to owervrite encoding
+        public sealed class ExtentedStringWriter : StringWriter
+        {
+            private readonly Encoding stringWriterEncoding;
+            public ExtentedStringWriter( Encoding desiredEncoding)
+                : base()
+            {
+                this.stringWriterEncoding = desiredEncoding;
+            }
+
+            public override Encoding Encoding
+            {
+                get
+                {
+                    return this.stringWriterEncoding;
+                }
+            }
         }
     }
 }
