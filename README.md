@@ -18,7 +18,7 @@ skjedd et vedtak) til nivå 4 (full situasjonsplan). Se koden for nærmere info 
 hva som gjøres i hvert nivå. Dette eksempelet tilsvarer altså det arbeidet som 
 skal gjøres i eByggeSak-systemet for å sende meldinger til matrikkelklienten.
 
-Når du har sendt meldinger vil de være synlige i ???.
+Når du har sendt meldinger vil de IKKE være synlige slik som i Svarut/SvarInn, men det er laget en WinForms applikasjon med en enkel visning som kan benyttes.
 
 Eksempelet `ReceiveSample` er en mottakstjeneste som lytter på slike meldinger. 
 Den henter ut listen over mottatte meldinger, laster ned innholdet og dekrypterer 
