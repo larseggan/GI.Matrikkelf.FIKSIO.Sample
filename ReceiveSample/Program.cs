@@ -6,6 +6,8 @@ using KS.Fiks.IO.Client;
 using ClassLibFIKSIO;
 using KS.Fiks.ASiC_E;
 using System.Xml.Serialization;
+using System.Collections.Generic;
+
 
 namespace ReceiveSample
 {
@@ -34,10 +36,14 @@ namespace ReceiveSample
                 Console.WriteLine("Melding " + mottatt.Melding.MeldingId + " " + mottatt.Melding.MeldingType + " mottas...");
                 if (mottatt.Melding.HasPayload)
                 {
+                    string saksaar = null;
+                    string sakssekvensnummer = null;
+
                     IAsicReader reader = new AsiceReader();
                     using (var inputStream = mottatt.Melding.DecryptedStream.Result)
                     using (var asice = reader.Read(inputStream))
                     {
+                       
                         foreach (var asiceReadEntry in asice.Entries)
                         {
                             using (var entryStream = asiceReadEntry.OpenStream())
@@ -47,11 +53,15 @@ namespace ReceiveSample
                                     XmlSerializer serializer = new XmlSerializer(typeof(ByggesakType));
 
                                     ByggesakType sak = (ByggesakType)serializer.Deserialize(entryStream);
+                                    saksaar = sak.saksnummer.saksaar;
+                                    sakssekvensnummer = sak.saksnummer.sakssekvensnummer;
+
+
                                     if (sak.saksnummer != null)
                                     {
                                         Console.WriteLine("Mottatt byggesak med saksnummer " + sak.saksnummer.saksaar.ToString() + "/" + sak.saksnummer.sakssekvensnummer.ToString());
                                     }
-                                    string xmlString = new StreamReader(entryStream).ReadToEnd();
+                                  //  string xmlString = new StreamReader(entryStream).ReadToEnd();
                                 }
                                 else
                                     Console.WriteLine("Mottatt vedlegg: " + asiceReadEntry.FileName);
@@ -59,9 +69,49 @@ namespace ReceiveSample
                         }
                     }
 
-                    var svarmsg2 = mottatt.SvarSender.Svar("no.ks.fiks.matrikkelfoering.grunnlag.v2").Result;
+                    var svarmsg2 = mottatt.SvarSender.Svar("no.ks.fiks.matrikkelfoering.mottatt.v1").Result;
                     Console.WriteLine("Svarmelding " + svarmsg2.MeldingId + " " + svarmsg2.MeldingType + " sendt...");
                     mottatt.SvarSender.Ack();
+
+                    // wait some time to add add buildign to matrikkel
+                    System.Threading.Thread.Sleep(20000);
+
+                    KvitteringMatrikkelType kvitteringMatrikkelType = new KvitteringMatrikkelType();
+                    kvitteringMatrikkelType.saksnummer = new SaksnummerType1();
+                    kvitteringMatrikkelType.saksnummer.saksaar = saksaar;
+                    kvitteringMatrikkelType.saksnummer.sakssekvensnummer = sakssekvensnummer;
+
+                    kvitteringMatrikkelType.byggIdent = new ByggIdentType1[1];
+                    ByggIdentType1 newIdent = new ByggIdentType1();
+                    newIdent.bygningsnummer = "123";
+                    //                    newIdent.bygningsloepenummer = nyBygning.Bygningsloepenummer;
+                    kvitteringMatrikkelType.byggIdent[0] = newIdent;
+
+
+                    string xmlString = "";
+                    using (var stringwriter = new ExtentedStringWriter(System.Text.Encoding.UTF8))
+                    {
+
+
+                        var serializer = new XmlSerializer(kvitteringMatrikkelType.GetType());
+                        serializer.Serialize(stringwriter, kvitteringMatrikkelType);
+                        xmlString = stringwriter.ToString();
+
+                    }
+
+
+                    List<IPayload> payloads = new List<IPayload>();
+                    string index = @"""dokumenttype"": ""Byggesak""," + "\n" +
+                       @"""tittel"": ""Kvittering for matrikkelføring""," + "\n" +
+                       @"""dokumentnummer"": ""1""," + "\n" +
+                       @"""filnavn"": ""kvittering.xml""";
+
+
+                    payloads.Add(new StringPayload(index, "index.json"));
+                    payloads.Add(new StringPayload(xmlString, "kvittering.xml"));
+
+                    var kvittering = mottatt.SvarSender.Svar("no.ks.fiks.matrikkelfoering.kvittering.v2", payloads).Result;
+
                 }
                 else
                 {

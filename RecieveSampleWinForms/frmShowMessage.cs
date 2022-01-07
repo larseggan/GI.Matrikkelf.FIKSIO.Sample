@@ -9,6 +9,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using ClassLibFIKSIO;
 
 namespace RecieveSampleWinForms
 {
@@ -42,7 +43,7 @@ namespace RecieveSampleWinForms
                         {
                             if (asiceReadEntry.FileName.Contains(".xml"))
                             {
-                                
+
                                 try
                                 {
                                     if (mottatt.Melding.MeldingType == "no.ks.fiks.matrikkelfoering.grunnlag.v2")
@@ -56,11 +57,11 @@ namespace RecieveSampleWinForms
 
                                         }
                                     }
-                                    else if(mottatt.Melding.MeldingType == "no.ks.fiks.matrikkelfoering.kvittering.v2")
+                                    else if (mottatt.Melding.MeldingType == "no.ks.fiks.matrikkelfoering.kvittering.v2")
                                     {
                                         XmlSerializer serializer = new XmlSerializer(typeof(KvitteringMatrikkelType));
                                         KvitteringMatrikkelType ident = (KvitteringMatrikkelType)serializer.Deserialize(entryStream);
-                                       
+
                                     }
                                 }
                                 catch (Exception ex)
@@ -68,7 +69,7 @@ namespace RecieveSampleWinForms
 
                                     MessageBox.Show(ex.Message);
                                 }
-                              
+
                             }
                         }
 
@@ -147,14 +148,11 @@ namespace RecieveSampleWinForms
             string xmlString = "";
             using (var stringwriter = new ExtentedStringWriter(Encoding.UTF8))
             {
-                
-             //   stringwriter.NewLine = "";
+
                 var serializer = new XmlSerializer(kvitteringMatrikkelType.GetType());
                 serializer.Serialize(stringwriter, kvitteringMatrikkelType);
                 xmlString = stringwriter.ToString();
-
             }
-
 
             List<IPayload> payloads = new List<IPayload>();
             string index = @"""dokumenttype"": ""Byggesak""," + "\n" +
@@ -172,23 +170,6 @@ namespace RecieveSampleWinForms
             Close();
         }
 
-        // try to owervrite encoding
-        public sealed class ExtentedStringWriter : StringWriter
-        {
-            private readonly Encoding stringWriterEncoding;
-            public ExtentedStringWriter( Encoding desiredEncoding)
-                : base()
-            {
-                this.stringWriterEncoding = desiredEncoding;
-            }
 
-            public override Encoding Encoding
-            {
-                get
-                {
-                    return this.stringWriterEncoding;
-                }
-            }
-        }
     }
 }

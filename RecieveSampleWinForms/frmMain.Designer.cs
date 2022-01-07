@@ -31,9 +31,9 @@ namespace RecieveSampleWinForms
         {
             this.cmdClose = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmdVis = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmdVis = new System.Windows.Forms.Button();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,16 +70,6 @@ namespace RecieveSampleWinForms
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             this.dataGridView1.SizeChanged += new System.EventHandler(this.dataGridView1_SizeChanged);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Type";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Id";
-            this.Column2.Name = "Column2";
-            // 
             // cmdVis
             // 
             this.cmdVis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -90,6 +80,17 @@ namespace RecieveSampleWinForms
             this.cmdVis.Text = "Vis";
             this.cmdVis.UseVisualStyleBackColor = true;
             this.cmdVis.Click += new System.EventHandler(this.cmdVis_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Type";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 400;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Id";
+            this.Column2.Name = "Column2";
             // 
             // Column3
             // 
@@ -116,9 +117,9 @@ namespace RecieveSampleWinForms
 
         private System.Windows.Forms.Button cmdClose;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button cmdVis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button cmdVis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
