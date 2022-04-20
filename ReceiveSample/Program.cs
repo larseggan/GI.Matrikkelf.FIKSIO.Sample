@@ -81,11 +81,14 @@ namespace ReceiveSample
                     kvitteringMatrikkelType.saksnummer.saksaar = saksaar;
                     kvitteringMatrikkelType.saksnummer.sakssekvensnummer = sakssekvensnummer;
 
-                    kvitteringMatrikkelType.byggIdent = new ByggIdentType1[1];
-                    ByggIdentType1 newIdent = new ByggIdentType1();
+                    kvitteringMatrikkelType.byggIdent = new ByggIdentType[1];
+                    ByggIdentType newIdent = new ByggIdentType();
                     newIdent.bygningsnummer = "123";
                     //                    newIdent.bygningsloepenummer = nyBygning.Bygningsloepenummer;
                     kvitteringMatrikkelType.byggIdent[0] = newIdent;
+
+                    // Lars: New StatusTypeType in kvitteringMatrikkelType
+                    kvitteringMatrikkelType.status = StatusTypeType.velykket;
 
 
                     string xmlString = "";

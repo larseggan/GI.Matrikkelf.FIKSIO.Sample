@@ -138,11 +138,14 @@ namespace RecieveSampleWinForms
             kvitteringMatrikkelType.saksnummer.saksaar = txtSaksaar.Text;
             kvitteringMatrikkelType.saksnummer.sakssekvensnummer = txtSakssekvensnummer.Text;
 
-            kvitteringMatrikkelType.byggIdent = new ByggIdentType1[1];
-            ByggIdentType1 newIdent = new ByggIdentType1();
+            kvitteringMatrikkelType.byggIdent = new ByggIdentType[1];
+            ByggIdentType newIdent = new ByggIdentType();
             newIdent.bygningsnummer = nyBygning.Bygningsnummer;
             newIdent.bygningsloepenummer = nyBygning.Bygningsloepenummer;
             kvitteringMatrikkelType.byggIdent[0] = newIdent;
+
+            // Lars: New StatusTypeType in kvitteringMatrikkelType
+            kvitteringMatrikkelType.status = StatusTypeType.velykket;
 
 
             string xmlString = "";
