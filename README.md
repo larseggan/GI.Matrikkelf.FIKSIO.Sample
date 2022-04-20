@@ -1,6 +1,6 @@
 # GI.Matrikkelf.FIKSIO.Sample
 Eksempel på oppretting og mottak av melding for matrikkelføring fra eByggesak vha. FIKS-IO.
-Dette bygger på versjon 2 av standarden: https://ks-no.github.io/fiks-plattform/tjenester/fiksio/matrikkelfoering/
+Dette bygger på versjon 2 av standarden (april 2022): https://ks-no.github.io/fiks-plattform/tjenester/fiksio/matrikkelfoering/
 
 Les mer om FIKS IO her: https://ks-no.github.io/fiks-plattform/tjenester/fiksio/
 
