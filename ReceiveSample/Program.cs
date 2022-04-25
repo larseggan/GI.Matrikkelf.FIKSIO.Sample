@@ -73,6 +73,8 @@ namespace ReceiveSample
                     Console.WriteLine("Svarmelding " + svarmsg2.MeldingId + " " + svarmsg2.MeldingType + " sendt...");
                     mottatt.SvarSender.Ack();
 
+                    Console.WriteLine("Venter 20 sekund...");
+
                     // wait some time to add add buildign to matrikkel
                     System.Threading.Thread.Sleep(20000);
 
@@ -87,6 +89,17 @@ namespace ReceiveSample
                     //                    newIdent.bygningsloepenummer = nyBygning.Bygningsloepenummer;
                     kvitteringMatrikkelType.byggIdent[0] = newIdent;
 
+                    kvitteringMatrikkelType.tiltak = new TiltakType[1];
+                    TiltakType  newTiltaktype = new TiltakType();
+                    TiltaktypeType newType = new TiltaktypeType();
+                    newType.kode = "nyttbyggboligformal";
+                    newType.beskrivelse = "Nytt bygg - boligformål";
+                    newTiltaktype.tiltakstype = newType;
+                    
+                    newTiltaktype.tiltakid = "1";
+                    kvitteringMatrikkelType.tiltak[0] = newTiltaktype;
+
+
                     // Lars: New StatusTypeType in kvitteringMatrikkelType
                     kvitteringMatrikkelType.status = StatusTypeType.velykket;
 
@@ -99,6 +112,9 @@ namespace ReceiveSample
                         var serializer = new XmlSerializer(kvitteringMatrikkelType.GetType());
                         serializer.Serialize(stringwriter, kvitteringMatrikkelType);
                         xmlString = stringwriter.ToString();
+                        Console.WriteLine("kvitteringMatrikkelType:");
+                        Console.WriteLine(xmlString);
+                        Console.WriteLine();
 
                     }
 
